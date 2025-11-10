@@ -1,8 +1,8 @@
 # Ignore everything in src directory
 src/*
 
-# But don't ignore the hello.txt file in src directory
-!src/hello.txt
+# But don't ignore the ikut.txt file in src directory
+!src/ikut.txt
 
 # Allow the src directory itself to be tracked
 !src/
