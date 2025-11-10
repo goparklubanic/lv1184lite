@@ -1,0 +1,40 @@
+# Ignore everything in src directory
+src/*
+
+# But don't ignore the hello.txt file in src directory
+!src/hello.txt
+
+# Allow the src directory itself to be tracked
+!src/
+
+# Optional: Also allow specific subdirectories if needed
+# !src/app/
+# !src/bootstrap/
+# !src/config/
+# !src/database/
+# !src/public/
+# !src/resources/
+# !src/routes/
+# !src/storage/
+# !src/tests/
+# !src/vendor/
+
+# Laravel specific ignores (outside src)
+/.idea
+/.vscode
+/node_modules
+/vendor
+.env
+.env.local
+.env.production
+.DS_Store
+Thumbs.db
+composer.lock
+package-lock.json
+yarn.lock
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+public/storage
+bootstrap/cache/*
