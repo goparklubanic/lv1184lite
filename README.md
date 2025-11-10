@@ -22,43 +22,49 @@ Sesuaikan:
 git clone https://github.com/goparklubanic/lv1184lite.git
 ```
 
-2. Buat kontainer
+1. Setup laraval project
+
+```bash
+composer create-project laravel/laravel:11 src
+```
+
+1. Buat kontainer
 
 ```bash
 docker-compose up -d
 ```
 
-3. Install dependensi
+1. Install dependensi
 
 ```bash
 docker exec -it mtc_app composer install
 ```
 
-4. Generate key
+1. Generate key
 
 ```bash
 docker exec -it mtc_app php artisan key:generate
 ```
 
-5. Migrate database
+1. Migrate database
 
 ```bash
 docker exec -it mtc_app php artisan migrate
 ```
 
-6. Jalankan aplikasi
+1. Jalankan aplikasi
 
 ```bash
 docker exec -it mtc_app php artisan serve --host=0.0.0.0 --port=8000
 ```
 
-7. Akses aplikasi
+1. Akses aplikasi
 
 ```bash
 http://localhost:8585
 ```
 
-8. Stop kontainer
+1. Stop kontainer
 
 ```bash
 docker-compose down
